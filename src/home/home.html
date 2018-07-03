@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商城首页</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 清除浏览器默认的样式 -->
+    <link href="../../css/normalize.css" type="text/css" rel="stylesheet">
+    <!-- 引用动画库  是网页标准的动画库-->
+    <link href="../../css/animateWeb.css" type="text/css" rel="stylesheet">
+    <!-- 此处引入的动画库包含特殊的JS+CSS处理,当页面刚加载出来,且滑动滚动条往下滚动到屏幕可见出,出现动画一次,反之,页面往上滚动,不在出现之前的动画 -->
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link href="home.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="head-one">
+        <div class="head-one-inblock font-div">
+            <span class="head-one-font">
+                <i class="fa fa-clock-o" style="font-size: 10px;color: rgb(117,117,117);padding: 0 4px;"></i>在线时间 08:30 ~ 21:30</span>
+            <span class="head-one-font">欢迎访问花语在线商城！</span>
+        </div>
+        <div class="head-one-inblock log-div">
+            <i class="fa fa-search head-one-logo"></i>
+            <i class="fa fa-user head-one-logo"></i>
+            <i class="fa fa-shopping-cart head-one-logo"></i>
+        </div>
+    </div>
+    <div class="head-two">
+        <div class="huayu">
+            <img class="huayu-img" src="../../assets/img/主页-头部/头部-花语.png">
+        </div>
+        <nav class="div-nav">
+            <a href="#">商品首页</a>
+            <a href="#">所有商品</a>
+            <a href="#">支付方式</a>
+            <a href="#">关于花语</a>
+            <a href="#">线下门店</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="fade-in animated fadeIn">
+            <span>H</span>
+            <span>U</span>
+            <span>A</span>
+            <span>Y</span>
+            <span>U</span>
+        </div>
+        <div class="photo" style="left: -100%;">
+            <img alt="3" width="100%;" src="../../assets/img/主页-轮播/b1c7b4f1ce9b41efe51bc6eebd8032fa.jpg"><img alt="1" width="100%;" src="../../assets/img/主页-轮播/7e4b32d124d3edd5d8a79dfb263feedd.jpg"><img alt="2" width="100%;" src="../../assets/img/主页-轮播/49c679a4fe4f73781d36778b66ed2ec8.jpg"><img alt="3" width="100%;" src="../../assets/img/主页-轮播/b1c7b4f1ce9b41efe51bc6eebd8032fa.jpg"><img alt="1" width="100%;" src="../../assets/img/主页-轮播/7e4b32d124d3edd5d8a79dfb263feedd.jpg">
+        </div>
+        <div class="buttons">
+            <span class="i-circle show" id="one"></span>
+            <span class="i-circle" id="two"></span>
+            <span class="i-circle" id="three"></span>
+        </div>
+        <div class="arrow">
+            <span class="arrow-left">
+                <i>
+                    <</i>
+            </span>
+            <span class="arrow-right">
+                <i>></i>
+            </span>
+        </div>
+    </div>
+    <div class="second">
+            <div class="second-common wowOne" data-wow-duration="3s">
+                <img src="../../assets/img/首页-第二层/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8xMC81M2MxMjFjM2MwZThjNDdlMjBjZjAxN2NmNDE2ZGViYS02MDB4MzMwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg">
+            </div>
+            <div class="second-common wowTwo" data-wow-duration="3s">
+                <img src="../../assets/img/首页-第二层/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8xMC9hYTMwZDgzMzk4NjM1OWMwYjQzNzFjZDUzODk2OWFhYS02MDB4MzMwLmpwZw_p_p100_p_3D_p_p1.jpg">
+            </div>
+    </div>
+    <div class="new-product">
+        <div class="new-text wowSlideInUp" >
+            <div class="new-one">
+                <p class="new-two">今日上新</p>
+                <p class="new-three">New product</p>
+            </div>
+            <div class="new-four">
+                + 查看更多
+            </div>
+            <div class="new-five">
+            </div>
+        </div>
+        <div class="new-picture wowSlideInUp" >
+            <div class="new-picture-general">
+                <div class="new-picture-addAnima">
+                    <img src="../../assets/img/主页-今日上新/植物花卉001.jpg">
+                    <div class="new-picture-addAnimaContent">植物花卉001</div>
+                </div >
+                <div>￥5900</div>
+            </div>
+            <div class="new-picture-general">
+                <div class="new-picture-addAnima ">
+                    <img src="../../assets/img/主页-今日上新/植物花卉004.jpg">
+                    <div class="new-picture-addAnimaContent">植物花卉004</div>
+                </div>
+                <div>￥5900</div>
+            </div>
+            <div class="new-picture-general">
+                <div class="new-picture-addAnima">
+                    <img src="../../assets/img/主页-今日上新/植物花卉006.jpg" >
+                    <div class="new-picture-addAnimaContent">植物花卉006</div>
+                </div>
+                <div>￥5900</div>
+            </div>
+            <div class="new-picture-general">
+                <div class="new-picture-addAnima">
+                    <img src="../../assets/img/主页-今日上新/植物花卉008.jpg">
+                    <div class="new-picture-addAnimaContent">植物花卉008</div>
+                </div>
+                <div>￥5900</div>
+            </div>
+        </div>
+    </div>
+    <div class="sales-promotion">
+        <div class="new-text">
+            <div class="new-one">
+                <p class="new-two">限时促销</p>
+                <p class="new-three">sales promotion</p>
+            </div>
+            <div class="new-four">
+                + 查看更多
+            </div>
+            <div class="new-five">
+            </div>
+        </div>
+        <div class="sales-picture">
+            <div class="sales-left sales-common wowOne" >
+                <div class="time"><span class="day">158</span>天<span class="hour">1</span>时<span class="minute">1</span>分<span class="sec">1</span>秒</div>
+                <div><img src="../../assets/img/主页-限时促销/图1.jpg"></div>
+            </div>
+            <div class="sales-right sales-common wowTwo" >
+                <div><img src="../../assets/img/主页-限时促销/图2.jpg"></div>
+                <div class="time"><span class="day">158</span>天<span class="hour">1</span>时<span class="minute">1</span>分<span class="sec">1</span>秒</div>
+            </div>
+        </div>
+    </div>
+    <div class="display-one">
+        <div class="display-right">
+            <div class="display-right-main">
+                <div class="display-one-img">
+                    <img src="../../assets/img/主页-头部/头部-花语.png"  height="100px" >
+                </div>
+                <div class="display-right-content wowTwo">
+                    我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。起飞页提供了海量精美网站模板和成品网站，起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图、自由拖拽，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="decorate-homes">
+        <div class="new-text wowSlideInUp" style="margin: 0 0 5px 0">
+            <div class="new-one">
+                <p class="new-two">装点家园</p>
+                <p class="new-three">decorate the homes</p>
+            </div>
+            <div class="new-four">
+                + 查看更多
+            </div>
+            <div class="new-five">
+            </div>
+        </div>
+        <div class="decorate-detail wowSlideInUp">
+            <div class="decorate-detail-common">
+                <div class="decorate-img"><img src="../../assets/img/主页-今日上新/植物花卉008.jpg"></div>
+                <div class="decorate-other">
+                    <div class="decorate-border"></div>
+                    <div class="decorate-name">植物花卉008</div>
+                    <div class="decorate-price">￥5900</div>
+                </div>
+                <!-- <div class="decorate-detail-border"></div> -->
+            </div>
+            <div class="decorate-detail-common">
+                <div class="decorate-other">
+                    <div class="decorate-name" style="margin: 0 0 5px 0">植物花卉006</div>
+                    <div class="decorate-border"></div>
+                    <div class="decorate-price">￥5900</div>
+                </div>
+                <div class="decorate-img"><img src="../../assets/img/主页-今日上新/植物花卉006.jpg"></div>
+                <!-- <div class="decorate-detail-border"></div>     -->
+            </div>
+            <div class="decorate-detail-common">
+                <div class="decorate-img"><img src="../../assets/img/主页-今日上新/植物花卉004.jpg"></div>
+                <div class="decorate-other">
+                    <div class="decorate-border"></div>
+                    <div class="decorate-name">植物花卉004</div>
+                    <div class="decorate-price">￥5900</div>
+                </div>
+                <!-- <div class="decorate-detail-border"></div> -->
+            </div>
+            <div class="decorate-detail-common">
+                <div class="decorate-other">
+                    <div class="decorate-name" style="margin: 0 0 5px 0">植物花卉002</div>
+                    <div class="decorate-border"></div>
+                    <div class="decorate-price">￥5900</div>
+                </div>
+                <div class="decorate-img"><img src="../../assets/img/主页-今日上新/植物花卉002.jpg"></div>
+                <!-- <div class="decorate-detail-border"></div>     -->
+            </div>
+        </div>
+    </div>
+    <div class="display-two">
+        <div class="display-two-left wowOne">
+            <div class="left-common">
+                <div class="left-img">
+                    <img src="../../assets/img/首页-第二层/图1.jpg">
+                </div>
+                <div class="left-content">
+                    <a href="#">天气干燥，花店老板推荐制氧绿植</a>
+                    <div class="release-date">发布日期：2017-05-23</div>
+                    <div class="detail-content">秋天的拉萨，天气比较干燥，这个时候在家里养一些可以制造氧气和水分的植物大有好处。记者走访多个花店后发现，很多店老板都会同时提到一种制氧植物——红豆杉。红豆杉有“植物增氧机”之称...</div>
+                </div>
+            </div>
+            <div class="left-common">
+                <div class="left-img">
+                    <img src="../../assets/img/首页-第二层/图2.jpg">
+                </div>
+                <div class="left-content">
+                    <a href="#">山中花店的活动中 稀有种子如何获得？</a>
+                    <div class="release-date">发布日期：2017-05-23</div>
+                    <div class="detail-content">从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</div>
+                </div>
+            </div>
+        </div>
+        <div class="display-two-right wowTwo">
+        </div>
+    </div>
+    <div class="other-information wowSlideInUp" >
+        <div class="information-common">
+            <div class="information">
+                <img src="../../assets/img/其他信息/包邮.png">
+            </div>
+            <div class="information">
+                <div class="information-titile">满1000元全国包邮</div>
+                <div class="information-content">全场订单满1000元全国包邮</div>
+            </div>
+        </div>
+        <div class="information-common">
+            <div class="information">
+                <img src="../../assets/img/其他信息/下单.png">
+            </div>
+            <div class="information">
+                <div class="information-titile">下单送精美礼品</div>
+                <div class="information-content">本店购买任意商品赠送精美礼品</div>
+            </div>
+        </div>
+        <div class="information-common">
+            <div class="information">
+                <img src="../../assets/img/其他信息/售后.png">
+            </div>
+            <div class="information">
+                <div class="information-titile">贴心的售后服务</div>
+                <div class="information-content">7x24小时售后随时为您服务</div>
+            </div>
+        </div>
+        <div class="information-common">
+            <div class="information">
+                <img src="../../assets/img/其他信息/店铺优惠.png">
+            </div>
+            <div class="information">
+                <div class="information-titile">店铺优惠劵</div>
+                <div class="information-content">每日整点可领取限量优惠劵</div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-one">
+            <div class="foot-one-left"> 
+                <div class="foot-one-left-div">
+                    <div class="div-title">About Change</div>
+                    <div class="div-content">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+                </div>
+                <div class="foot-one-left-div">
+                    <div class="div-title">Service</div>
+                    <div class="div-content">
+                        消費者保障服务<br>
+                        七天无理由退款<br>
+                        假一赔三<br>
+                    </div>
+                </div>
+                <div class="foot-one-left-div">
+                    <div class="div-title">About Color</div>
+                    <div class="div-content">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+                </div>
+                <div class="foot-one-left-div">
+                    <div class="div-title">Online Payment</div>
+                    <div class="div-img">
+                        <img src="../../assets/img/底部/银联.png">
+                        <img src="../../assets//img/底部/支付宝.png">
+                        <img src="../../assets/img/底部/沟.png">     
+                    </div>
+                </div>
+                <div class="foot-one-left-div">
+                    <div class="div-title">Online Payment</div>
+                    <div class="div-content">非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+                </div>
+                <div class="foot-one-left-div">
+                    <div class="div-title">Wechat</div>
+                    <div class="div-content">非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+                </div>
+            </div>
+            <div class="foot-one-right">
+                <img src="../../assets/img/主页-头部/头部-花语.png" width="80px" style="margin: 25px 0 60px 0;">
+                <div>
+                    <div class="div-title">Social App</div>
+                    <div>
+                        <span class="weibo"></span>
+                        <span class="wexin"></span>
+                        <span class="zhaoxiang"></span>
+                        <span class="tuite"></span>
+                        <span class="f"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-two">
+            <div class="foot-two-div">
+                <div class="font-two-title">关于产品</div>
+                <div class="font-two-en">about color</div>
+                <div class="font-two-content">所有商品均为实物拍摄，各浏览器显示有所不同，对此要求高的买家慎拍</div>
+            </div>
+            <div class="foot-two-div">
+                <div class="font-two-title">关于退货</div>
+                <div class="font-two-en">about change</div>
+                <div class="font-two-content">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+            </div>
+            <div class="foot-two-div">
+                <div class="font-two-title">关于产品</div>
+                <div class="font-two-en">about change</div>
+                <div class="font-two-content">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</div>
+            </div>
+            <div class="foot-two-div">
+                <div class="font-two-title">扫码关注</div>
+                <div class="font-two-en">about change</div>
+                <img src="../../assets/img/底部/二维码.jpg" style="display: block">
+                <div class="font-two-content">搜索微信号：HUAYU</div>
+            </div>
+        </div>
+        <div class="foot-three">
+            Copyright © 2010-2015花语文化传播有限公司 All rights reserved
+        </div>
+    </div>
+    <div class="div-fixed">
+        <!-- <div class="div-fixed-common">
+            <i class="fa fa-qq" aria-hidden="true"></i>
+        </div>
+        <div class="div-fixed-common">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="div-fixed-common">
+            <a><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div> -->
+        <i class="fa fa-qq" aria-hidden="true"></i>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <i class="fa fa-arrow-up scroll-top" aria-hidden="true"></i>
+    </div>
+</body>
+<!-- 此处引入的动画库包含特殊的JS+CSS处理,当页面刚加载出来,且滑动滚动条往下滚动到屏幕可见出,出现动画一次,反之,页面往上滚动,不在出现之前的动画 -->
+<script type="text/javascript" src="../../js/wow.js"></script>
+<script type="text/javascript" src="home.js"></script>
+</html>

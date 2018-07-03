@@ -1,0 +1,730 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    SimSun, sans-serif;
+}
+
+/* //以下是头部的前两部分样式 */
+/* 头部一  样式 */
+.head-one{
+    background-color: rgb(224,224,224);
+    position: relative;
+    height: 42px;
+    vertical-align: middle;
+}
+
+.head-one-font{
+    font-size: 12px;
+    color: rgb(117,117,117);
+    margin: 0 0 0 30px ; 
+    line-height: 42px;
+}
+
+.head-one-logo{
+    font-size: 20px;
+    color:rgb(73,73,73);
+    margin:10px  10px;
+}
+
+.head-one-inblock{
+    display: inline-block;
+    vertical-align: middle;
+}
+.font-div{
+    width: 500px;
+    height: 42px;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+}
+
+.log-div{
+    width: 180px;
+    position: absolute;
+    right: 0;
+}
+
+/* 当屏幕宽度小于900px的时候，部分被隐藏 */
+@media screen and (max-width:900px){
+    .head-one{
+        display: none;
+    }
+}
+
+/* 头部二  样式 */
+.head-two{
+    background-image: url(../../assets/img/主页-头部/头部-背景.jpg);
+}
+
+.huayu{
+    text-align: center;
+}
+
+.huayu-img{
+    height: 90px;
+    padding: 25px 0 0 0;
+}
+
+.div-nav{
+    text-align: center;
+    height: 50px;
+}
+
+a{
+    font-size: 14px;
+    line-height: 50px;
+    color: rgb(132,112,112);
+    margin: 0 45px;
+    text-decoration: none;
+}
+
+
+/* 分界线 */
+/* 以下是做首页轮播图 */
+.container{
+    position: relative;
+    height:400px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.fade-in{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:  translate(-50%, -50%);
+    z-index: 3;
+    font-size: 60px;
+    /* 动画延时时间 */
+    /* animation-delay: 2s; */
+    
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.fade-in span{
+    padding: 0 30px;
+    color:white;
+}
+
+.photo{
+    position: absolute;
+    box-sizing: border-box;
+    height: 400px;
+    /* 让照片的父容器里面的内容不换行  将照片设置为inline-block且不换行 则会使照片在X轴显示  多余部分需要隐藏*/
+    display: inline-block;
+    white-space:nowrap; 
+    width: 100%;
+    z-index: 1;
+}
+
+.photo img{
+    height: 400px;
+    width: 100%;
+}
+
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 2;
+    height: 30px;
+}
+
+.buttons span{
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.i-circle{
+    display: inline-block;
+    background-color: rgb(96, 102, 95);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.show{
+    background-color: rgb(35, 226, 17);
+}
+
+.arrow{
+    position: absolute;
+    /* arrow层 刚开始需要隐藏，当鼠标划到 container界面的任何位置，方显示arrow*/
+    display: none;
+    vertical-align: middle;
+    width: 100%;
+    top:140px;
+    z-index: 2;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    
+}
+
+/*当鼠标划到 container界面的任何位置，方显示arrow  */
+.container:hover .arrow{
+    display: block;
+}
+
+.arrow-left{
+    position: absolute;
+    vertical-align: middle;
+    font-size: 50px;
+    left: 10px;
+}
+
+.arrow-right{
+    position: absolute;
+    vertical-align: middle;
+    font-size: 50px;
+    right: 10px;
+}
+
+.arrow-right:hover{
+    cursor: pointer;
+    background-color: rgb(63, 143, 87);
+}
+
+.arrow-left:hover{
+    cursor: pointer;
+    background-color: rgb(63, 143, 87);
+}
+
+/* 分界线 */
+/* 以下是第二部分的展示，轮播图下方 */
+.second{
+    padding: 30px 0;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* 由于这个div 有动画效果,所以会有资源得溢出,刷新时能看到进度条,改进得方法就说overflow:hidden  */
+}
+
+.second-common{
+    display: inline-block;
+    border:solid 1px rgb(221,221,221);
+    padding: 5px 5px;
+}
+
+.second-left{
+    left: 0;
+}
+
+.second-right{
+    right: 0;
+}
+
+
+/* 分界线 */
+/* 今日上新的图 */
+.new-product,.sales-promotion,.decorate-homes,.display-two{
+    width: 89%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.new-text{
+    position: relative;
+    margin:0 0 40px 0;
+    vertical-align: middle;
+    border-bottom: solid 1px rgb(224,224,224);
+}
+
+.new-one{
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.new-two{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(51,51,51);
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.new-three{
+    display: inline-block;
+    color: rgb(186,192,209);
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.new-four{
+    position: absolute;
+    right: 0;
+    top: 11px;
+    font-size: 12px;
+    padding: 5px 8px;
+    color: rgb(150,150,150);
+    border: solid 1px rgb(150,150,150);
+}
+
+.new-five{
+    width: 220px;
+    border-bottom: solid 2px rgb(153,153,153);
+}
+
+.new-picture{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.new-picture-general{
+    display: inline-block;
+    border: solid 1px rgb(229,229,229);
+    box-sizing: border-box;
+    width: calc( 24.5% - 10px );
+    margin: 0 5px;
+    padding: 0 0 20px 0 ;
+    cursor: pointer;
+}
+
+.new-picture-general:hover{
+    box-shadow: 0 2px 4px 3px rgba(229,229,229,.5) ;
+}
+
+.new-picture img{
+    display: block;
+    width: 100%;
+}
+
+.new-picture-general p{
+    font-size: 15px;
+    color:  rgb(153,153,153);
+}
+
+/* 鼠标移入时产生的动画效果 */
+/* 增加下划线和文字 颜色加深  new-picture-animation*/
+.new-picture-general:hover .new-picture-addAnimaContent{
+    border-bottom: solid 1px rgb(229,229,229);
+    color: rgb(26, 25, 25);
+}
+
+.new-picture-addAnima{
+    overflow: hidden;
+}
+
+.new-picture-general:hover img{
+    transform: scale(1.1);
+}
+
+.new-picture-addAnimaContent{
+    color: rgb(116, 116, 119);
+    padding: 10px 0;
+    margin: 0 0 5px 0 ;
+}
+
+
+
+/* 限时促销 */
+.sales-picture{
+    text-align: center;
+    overflow: hidden;
+}
+
+.sales-common{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin: 0 3px;
+}
+
+.sales-common img{
+    width: 100%;
+}
+
+.sales-common span{
+    font-size: 50px;
+}
+
+.time{
+    background-color: rgb(247,247,247);
+    padding: 10px 0;
+}
+
+.display-one{
+    background-image: url("../../assets/img/主页-轮播/49c679a4fe4f73781d36778b66ed2ec8.jpg");
+    background-repeat: no-repeat;
+    background-position: -250px -200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.display-right{
+    width: 50%;
+    background-color: rgb(247,247,247);
+}
+
+.display-right-main{
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.display-one-img{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.display-right-content{
+    font-size: 14px;
+    color: rgb(128,128,128);
+    line-height: 40px;
+    
+}
+
+/* 分界线 */
+/* 装点家园 */
+.decorate-homes{
+    margin: 0 auto 30px auto;    
+    
+}
+
+
+.decorate-detail-common{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 24.2%;
+    margin: 0 3px;
+    /* border: solid 1px rgb(224,224,224); */
+    cursor: pointer;
+}
+
+.decorate-detail-common:hover {
+    box-shadow: -2px 4px 5px 3px rgba(190, 190, 190, 0.5);
+    
+}
+
+.decorate-detail-common:hover .decorate-name,.decorate-price{
+    color: rgb(27, 27, 27);
+    font-weight: 545;
+}
+
+.decorate-detail-common:hover img{
+    transform: scale(1.1);
+}
+
+.decorate-detail-common img{
+    width: 100%;
+    
+}
+
+.decorate-img{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.decorate-other{
+    height: 140px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}
+
+.decorate-name{
+    font-size: 14px;
+    color: rgb(102,102,102);
+    margin: 0 0 15px 0;
+
+}
+
+.decorate-border{
+    margin: 5px auto 20px auto;
+    height: 18px;
+    width: 20px;
+    border-bottom: solid 1px rgb(200,200,200);
+}
+
+.decorate-price{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* .decorate-detail-border{
+    width: 24%;
+    height: 98%;
+    border: 1px solid rgb(102,102,102);
+} */
+
+/* 分界线 */
+.display-right-main{
+    overflow: hidden;
+}
+
+.display-two-left{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    margin: 0 20px 0 0;
+}
+
+.display-two-right{
+    display: inline-block;
+    vertical-align: top;
+    width: 38%;
+    height: 440px;
+    background-image: url("../../assets/img/主页-限时促销/图1.jpg");
+    background-repeat: no-repeat;
+    background-position: -220px -100px;
+    background-size: 200%;
+}
+
+.left-common{
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    padding: 5px 5px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    border: solid 1px rgb(221,221,221);
+}
+
+.left-img{
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    height: 100%;
+}
+
+.left-common img{
+    width: 100%;
+    height: 100%;
+}
+
+.left-content{
+    width: calc(100% - 300px);
+    display: inline-block;
+    vertical-align: top;
+    padding: 28px 0 0 10px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+.left-content a{
+    text-align: left;
+    font-size: 16px;
+    color: rgb(20, 19, 19);
+    cursor: pointer;
+    margin: 0;
+    line-height: 25px;
+}
+
+.release-date{
+    font-size: 14px;
+    color: rgb(153,153,153);
+}
+
+.detail-content{
+    font-size: 14px;
+    color: rgb(119,119,119);
+    padding: 30px 0 0 0;
+}
+
+/* 分界线  满100元全国包邮....*/
+.other-information{
+    width: 89%;
+    margin: 0 auto 40px auto;
+}
+
+.information-common{
+    display: inline-block;
+    vertical-align: middle;
+    width: 24.5%;
+}
+
+.information{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.information-titile{
+    line-height: 30px;
+    color: rgb(73,73,73);
+}
+
+.information-content{
+    font-size: 13px;
+    color: rgb(186,201,222);
+}
+
+/* 分界线 */
+/* 底部foot  总共有三层   第一层*/
+.foot{
+    width: 100%;
+    background-color: rgb(247,247,247);
+}
+
+.foot-one{
+    padding: 100px 50px 50px 50px ;
+}
+
+.foot-one-left{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+.foot-one-right{
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    box-sizing: border-box;
+    padding: 0 0 0 40px;
+}
+
+.foot-one-left-div{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    height: 100%;
+    vertical-align: top;
+    margin: 0 40px;
+}
+
+.div-content{
+    width: 260px;
+    text-align: left;
+    line-height: 30px;
+    /* margin: 0 10px; */
+    font-size: 12px;
+    color: rgb(187,187,187);
+    width: 100%;
+}
+
+.div-title{
+    text-align: left;
+    font-weight: 350;
+    color: rgb(0,0,0);
+    letter-spacing: 5px;
+    margin: 30px 0 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div-img img{
+    width: 30px;
+    height: 30px;
+    margin: 20px 10px 0 0;
+}
+
+
+/* 截取雪碧图 */
+.foot-one-right span{
+    background-image: url("../../assets/img/底部/多图.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px 10px 0 0;
+}
+
+.weibo{
+    background-position: -23px -72px;
+}
+
+.wexin{
+    background-position: 1px -72px;
+}
+
+.zhaoxiang{
+    background-position: -120px -72px;
+}
+
+.tuite{
+    background-position: -192px -72px;
+}
+
+.f{
+    background-position: -95px -72px;
+}
+
+/* 分界线 */
+/* 底部foot  总共有三层   第二层*//*  */
+.foot-two{
+    width: 89%;
+    padding: 50px 0 100px;
+    border-bottom:solid 1px rgb(226,226,226);
+    border-top:solid 1px rgb(226,226,226);  
+    margin: 0 auto;
+}
+
+.foot-two-div{
+    display: inline-block;
+    width: 24.7%;
+    vertical-align: top;
+    padding: 0 70px 0 0 ;
+    box-sizing: border-box;
+}
+
+.font-two-title{
+    font-size: 18px;
+    color: rgb(127,127,127);
+}
+
+.font-two-en{
+    font-size: 12px;
+    color: rgb(169,169,176);
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.font-two-content{
+    font-size: 12px;
+    color:  rgb(169,169,176);
+    line-height: 32px;
+}
+
+/* 分界线 */
+/* 底部foot  总共有三层   第三层*//*  */
+.foot-three{
+    font-size: 14px;
+    color: rgb(169,169,169);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* 分界线 */
+/* 电话QQ等联系方式 */
+body{
+    position: relative;
+}
+
+.div-fixed{
+    position: fixed;
+    right: 0; 
+    top:calc(50% - 75.5px);
+    width: 50px;
+    height: 150px;
+    z-index: 5;
+}
+
+.div-fixed i{
+    display: inline-block; 
+    text-align: center;
+    width: 100%;
+    height: 33.99%;
+    font-size: 20px;
+    background-color:#ccc;
+    color: #09c;
+    line-height: 50px;
+}
+
+.scroll-top{
+    cursor: pointer;
+}
+
