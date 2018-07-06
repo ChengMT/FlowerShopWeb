@@ -387,10 +387,12 @@ a{
 /* 分界线 */
 /* 装点家园 */
 .decorate-homes{
-    margin: 0 auto 30px auto;    
-    
+    margin: 60px auto 30px auto;    
 }
 
+.decorate-detail{
+    padding: 20px 0;
+}
 
 .decorate-detail-common{
     display: inline-block;
@@ -470,7 +472,8 @@ a{
     display: inline-block;
     vertical-align: top;
     width: 60%;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
 }
 
 .display-two-right{
@@ -482,6 +485,7 @@ a{
     background-repeat: no-repeat;
     background-position: -220px -100px;
     background-size: 200%;
+    box-sizing: border-box;
 }
 
 .left-common{
@@ -664,7 +668,7 @@ a{
 
 .foot-two-div{
     display: inline-block;
-    width: 24.7%;
+    width: 24.6%;
     vertical-align: top;
     padding: 0 70px 0 0 ;
     box-sizing: border-box;
@@ -719,8 +723,8 @@ body{
     width: 100%;
     height: 33.99%;
     font-size: 20px;
-    background-color:#ccc;
-    color: #09c;
+    background-color:black;
+    color:white;
     line-height: 50px;
 }
 
